@@ -11,8 +11,44 @@
 			padding: 5px;
 		}
 	</style>
+	<link rel="stylesheet" href="CSS/Calculator.css">
+	<script href="JS/Calculator.js"></script>
 </head>
 <body>
+	<div>
+		<div id="result">0</div>
+		<table class="Calculator" cellspacing="50" cellpadding="1"
+		bgcolor="pink">
+			<tr class="Calculator__row1">
+				<td class="Calculator__row1--Clear" id="Clear"><button>Clear</button></td>
+				<td class="Calculator__row1--/" id="/"><button>/</button></td>
+				<td class="Calculator__row1--*" id="*"><button>*</button></td>
+				<td class="Calculator__row3--7" id="-" rowspan="2"><button>-</button></td>
+			</tr>
+			<tr class="Calculator__row2">
+				<td class="Calculator__row2--7" id="7"><button>7</button></td>
+				<td class="Calculator__row2--8" id="8"><button>8</button></td>
+				<td class="Calculator__row2--9" id="9"><button>9</button></td>
+			</tr>
+			<tr class="Calculator__row3">
+				<td class="Calculator__row3--4" id="4"><button>4</button></td>
+				<td class="Calculator__row3--5" id="5"><button>5</button></td>
+				<td class="Calculator__row3--6" id="6"><button>6</button></td>
+				<td class="Calculator__row2--+" id="+"  rowspan="2"><button>+</button></td>
+			</tr>
+			<tr class="Calculator__row4">
+				<td class="Calculator__row4--1" id="1"><button>1</button></td>
+				<td class="Calculator__row2--2" id="2"><button>2</button></td>
+				<td class="Calculator__row2--3" id="3"><button>3</button></td>
+
+			</tr>
+			<tr class="Calculator__row5">
+				<td class="Calculator__row2--0" id="0" colspan="2"><button>0</button></td>
+				<td class="Calculator__row2--." id="."><button>.</button></td>
+				<td class="Calculator__row2--=" id="="><button>=</button></td>
+			</tr>
+		</table>
+	</div>
 	<div class="container mt-4">
 		<div class="row">
 			<div class="col-md-4">
@@ -45,26 +81,5 @@
 			</div>
 		</div>
 	</div>
-	
-	<script type="text/javascript">
-		function appendValue(value) {
-			document.getElementById("result").innerHTML += value;
-		}
-		
-		function clearResult() {
-			document.getElementById("result").innerHTML = "0";
-		}
-		
-		function backspace() {
-			var result = document.getElementById("result").innerHTML;
-			document.getElementById("result").innerHTML = result.substring(0, result.length - 1);
-		}
-		
-		function calculate() {
-			var result = document.getElementById("result").innerHTML;
-			var answer = eval(result);
-			document.getElementById("result").innerHTML = answer;
-		}
-	</script>
 </body>
 </html>

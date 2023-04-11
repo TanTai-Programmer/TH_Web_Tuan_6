@@ -25,6 +25,9 @@ button{
     color: white;
     font-weight: bold;
 }
+p{
+    font-size: 200px;
+}
 #Time{
     font-size :60px;
     color: white;
