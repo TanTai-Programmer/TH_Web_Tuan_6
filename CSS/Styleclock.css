@@ -1,5 +1,46 @@
 body{
-    background-color:red;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+button{
+    padding:20px;
+    border-radius: 20px;
+    border:none;
+    width: 200px;
+    box-shadow: 4px 2px 5px white;
+    margin: 50px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px rgb(188, 42, 42);
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#Time{
+    font-size :60px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#btn{
+    display: flex;
+
+}
+#Start{
+    background-color: rgb(78, 239, 78);
+    cursor: pointer;
+}
+#Pause{
+    background-color: rgb(255, 75, 75);
+    cursor: pointer;
+}
+#Reset{
+    background-color:yellow;
+    cursor: pointer;
 }
