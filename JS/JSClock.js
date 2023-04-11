@@ -7,8 +7,11 @@ window.onload = function () {
     var buttonStart = document.getElementById('Start');
     var buttonStop = document.getElementById('Pause');
     var buttonReset = document.getElementById('Reset');
-    var Interval ;
-  
+    var Interval;
+    var buttonTest = document.getElementById('Test');
+    buttonTest.onclick = function () {
+      alert('Something')
+    }
     buttonStart.onclick = function() {
       clearInterval(Interval);
        Interval = setInterval(startTimer, 10);
